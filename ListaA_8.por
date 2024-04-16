@@ -12,20 +12,24 @@ programa
 		escreva("\nInforme o 3° valor: ")
 			leia(c)
 
-		se(a>b e a>c){
-			escreva("\nO 1° Valor é o maior = ", a)
-		}senao se(b>a e b>c){
-			escreva("\nO 2° Valor é o maior = ", b)
+		se (a>b e a>c e b>c){
+			escreva(c," < ",b," < ",a)
+		}senao se(b>a e b>c e a>c){
+			escreva(c," < ",a," < ",b)
 		}senao
-			escreva("\nO 3° Valor é o maior = ", c)	
-	}			
+			escreva(a," < ",b," < ",c)
+			
+		
+		
+		
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 377; 
+ * @POSICAO-CURSOR = 0; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

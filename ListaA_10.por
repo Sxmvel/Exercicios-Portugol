@@ -3,29 +3,31 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro a,b,c
+		inteiro cruzeiro, atletico
 
-		escreva("Informe o 1° valor: ")
-			leia(a)
-		escreva("\nInforme o 2° valor: ")
-			leia(b)
-		escreva("\nInforme o 3° valor: ")
-			leia(c)
+		escreva("Número de gols marcados pelo Cruzeiro: ")
+			leia(cruzeiro)
+		escreva("\nNúmero de gols marcador pelo Atletico: ")
+			leia(atletico)
 
-		se(a>b e a>c){
-			escreva("\nO 1° Valor é o maior = ", a)
-		}senao se(b>a e b>c){
-			escreva("\nO 2° Valor é o maior = ", b)
-		}senao
-			escreva("\nO 3° Valor é o maior = ", c)	
-	}			
+		se(cruzeiro > atletico){
+			escreva("\nO time do Cruzeiro é vencedor!")
+		}senao se(cruzeiro < atletico){
+			escreva("\nO time do Atletico é vencedor!")
+		} senao 
+			escreva("\nEMPATE!")
+		
+			
+		
+	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 377; 
+ * @POSICAO-CURSOR = 413; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
