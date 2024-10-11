@@ -1,6 +1,8 @@
 # Binário para decimal.
 
-BIN: str = "11010"
+#Caso para qualquer número binario transformado em decimal
+
+BIN: str
 DEC: int = 0
 n: int
 
@@ -16,6 +18,8 @@ print(f"{BIN}b = {DEC}d")
 
 
 # Decimal para binário 
+
+#Código para caso base de transformação de número na base decimal para número em base binária.
 
 DEC: int = 26
 BIN: str 
