@@ -1,0 +1,43 @@
+# Binário para decimal.
+
+BIN: str = "11010"
+DEC: int = 0
+n: int
+
+BIN = input("Informe o número em binário: ")
+n = len(BIN)
+
+
+for i in range (0, n, 1):
+    DEC = DEC + int(BIN[i]) * (2 ** (n - 1 - i))
+
+
+print(f"{BIN}b = {DEC}d") 
+
+
+# Decimal para binário 
+
+DEC: int = 26
+BIN: str 
+aux: int 
+aux = DEC 
+
+BIN = str(aux % 2)
+aux = aux // 2
+
+BIN = BIN + str(aux % 2)
+aux = aux // 2
+
+BIN = BIN + str(aux % 2)
+aux = aux // 2
+
+BIN = BIN + str(aux % 2)
+aux = aux // 2
+
+BIN = BIN + str(aux % 2)
+
+BIN = BIN[ : : -1]
+
+
+
+print(f"{DEC}d = {BIN}b")
